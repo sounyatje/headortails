@@ -11,7 +11,6 @@ public class Main{
 
         CoinGame round = new CoinGame(player1, bot1);
         round.play();
-        System.out.println(player1.getName() + " -score: " + player1.getScore());
         bot1.announceResult();
     }
 }

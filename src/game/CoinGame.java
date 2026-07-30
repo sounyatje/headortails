@@ -39,5 +39,7 @@ public class CoinGame {
         } else {
             System.out.println(ai.getName() + " loses");
         }
+        System.out.println(human.getName() + " score: " + human.getScore());
+        System.out.println(ai.getName() + " score: " + ai.getScore());
     }
 }
