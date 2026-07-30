@@ -23,6 +23,18 @@ public class CoinGame {
             System.out.println("\nRound " + i + " :");
             play();
         }
+
+        System.out.println("\n--- Final Score ---");
+        System.out.println(human.getName() + ": " + human.getScore());
+        System.out.println(ai.getName() + ": " + ai.getScore());
+
+        if (human.getScore() > ai.getScore()) {
+            System.out.println(human.getName() + " wins the game!");
+        } else if (ai.getScore() > human.getScore()) {
+            System.out.println(ai.getName() + " wins the game!");
+        } else {
+            System.out.println("It's a tie!");
+        }
     }
 
     public void play () {
@@ -51,4 +63,5 @@ public class CoinGame {
         System.out.println(human.getName() + " score: " + human.getScore());
         System.out.println(ai.getName() + " score: " + ai.getScore());
     }
+
 }
