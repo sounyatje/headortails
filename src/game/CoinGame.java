@@ -20,25 +20,24 @@ public class CoinGame {
         Scanner scanner = new Scanner(System.in);
         System.out.println("heads or tails?");
 
-
+        String humanChoice = scanner.nextLine().trim().toUpperCase();
         String aiChoice = ai.chooseSide();
         String result = coin.flip();
 
         System.out.println("the coin is on: " + result);
-        String humanChoice = scanner.nextLine().trim().toUpperCase();
 
         if(humanChoice.equals(result)) {
             human.addPoint();
-            System.out.println(human.getName() + "wins");
+            System.out.println(human.getName() + " wins");
         } else {
-            System.out.println(human.getName() + "loses");
+            System.out.println(human.getName() + " loses");
         }
 
         if(aiChoice.equals(result)){
             ai.addPoint();
-            System.out.println(ai.getName() + "wins");
+            System.out.println(ai.getName() + " wins");
         } else {
-            System.out.println(ai.getName() + "loses");
+            System.out.println(ai.getName() + " loses");
         }
     }
 }
