@@ -9,11 +9,20 @@ public class CoinGame {
     private HumanPlayer human;
     private AIPlayer ai;
     private Coin coin;
+    private int totalRounds;
 
-    public CoinGame (HumanPlayer human, AIPlayer ai) {
+    public CoinGame (HumanPlayer human, AIPlayer ai, int totalRounds) {
         this.human= human;
         this.ai = ai;
         this.coin = new Coin ();
+        this.totalRounds = totalRounds;
+    }
+
+    public void start() {
+        for (int i = 1; i <= totalRounds; i++) {
+            System.out.println("\nRound " + i + " :");
+            play();
+        }
     }
 
     public void play () {

@@ -9,8 +9,8 @@ public class Main{
         HumanPlayer player1 = new HumanPlayer("Sounyâ");
         AIPlayer bot1 = new AIPlayer("bot1");
 
-        CoinGame round = new CoinGame(player1, bot1);
-        round.play();
+        CoinGame round = new CoinGame(player1, bot1, 3);
+        round.start();
         bot1.announceResult();
     }
 }
