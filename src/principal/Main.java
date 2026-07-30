@@ -11,6 +11,5 @@ public class Main{
 
         CoinGame round = new CoinGame(player1, bot1, 3);
         round.start();
-        bot1.announceResult();
     }
 }
