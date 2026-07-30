@@ -32,7 +32,7 @@ public class CoinGame {
         String humanChoice = scanner.nextLine().trim().toUpperCase();
         String aiChoice = ai.chooseSide();
         String result = coin.flip();
-
+        System.out.println(ai.getName() + " chose: " + aiChoice);
         System.out.println("the coin is on: " + result);
 
         if(humanChoice.equals(result)) {
